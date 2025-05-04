@@ -1,2 +1,4 @@
 # Tricho_RNA
-RNAseq pipeline
+
+
+**Objective:** Creation of an RNAseq pipeline with Nextflow for _Trichoplax adhaerens_
