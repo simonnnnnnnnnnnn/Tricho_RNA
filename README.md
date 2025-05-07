@@ -27,7 +27,7 @@ This Flavor came with the following specs:
 
 I chose Ubuntu 22.04 de.NBI as the Image (2025-05-06)
 
-### Configuration of the VM
+### Customisation of the VM
 
 In order to use the virtual machine I installed some software and ran some other commands. All commands dealing with the configuration of the VM are displayed below (ordered chronologically)
 
