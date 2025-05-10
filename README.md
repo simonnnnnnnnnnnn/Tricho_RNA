@@ -49,7 +49,7 @@ The commands to install nextflow follow [Nextflows Instructions](https://trainin
 
 To keep a local directory (where the code is written) in sync with a directory on the VM **rsync** is used. The following example shows how this was done:
 
-``b̀ash
+```b̀ash
 rsync -avu --progress -e "ssh -i ~/path/to/my/private/key.org_ecdsa -p 12345" ~/path/tomy/local/directory/ ubuntu@123.45.67.8:path/to/vm/directory/
 ```
 
@@ -70,7 +70,7 @@ Nextflow itself requires the following the following software to run properly as
 Docker of course requires images to run in its containers, the following table shows the program ran in a container, its cooresponding image and the source for the image.
 All of these images can be installed using this command:
 
-``b̀ash
+```b̀ash
 docker pull name_docker_image
 ```
 
@@ -98,7 +98,7 @@ The file **rna_pipe.nf** defines the worklfow of the pipeline, it is the centerp
 The pipeline is run by executing this file, no other commands are necessary, **rna_pipe.nf** will call all other scripts and handle their in -and output.
 Consequently this command runs the pipeline:
 
-``b̀ash
+```b̀ash
 nextflow run rna_pipe.nf
 ```
 
