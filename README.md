@@ -113,23 +113,76 @@ values given in params.yml overwrite the defaults set in the code, therefore the
 
 ### Modules
 
-The modules contain the processes, here the actual work is done. All used tools have at least one Module dedicated to them. Each module has one process which runs a docker container with the necessary tool for the step. Modules and processes share the same name which usually resembles the name of the used tool or purpose of the tool. The results are always saved in directories named after the used tools.
+The modules contain the processes, here the actual work is done. All used tools have at least one Module dedicated to them. Each module has one process which runs a docker container with the necessary tool for the step. Modules and processes share the same name which usually resembles the name of the used tool or purpose of the tool. The results are always saved in directories named after the used tools. The file docker_images.csv containes the docker images of the used tools.
 
 #### fastqc
 
-This module contains a single process that creates a docker container and runs FastQC inside it. The purpose of this is to create an inital quality reports of the reads.
+This module contains a single process that creates a docker container and runs [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) inside it. The purpose of this is to create an inital quality reports of the reads.
 
 **Input:** single gzipped fastq file (.fq.gz)
+
 **output:** zip folder, html-file
 
 #### trim_galore
 
-This module runs TrimGalore! and consequently trims the reads and produces trimmed reads, trimming reports of the paired-end reads as well as a general trimming report.
+This module runs [TrimGalore!](https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/) and consequently trims the reads and produces trimmed reads, trimming reports of the paired-end reads as well as a general trimming report.
 
-**input:** 
+**input:** paired-end reads (.fq.gz), one forward and one reverse read
+
+**output:** trimmed reads (fq.gz), trimming_report (.txt), fastqc_reports for each read (.zip, .html)
 
 #### multiqc
 
+This module creates a comprehensive quality report by combining all other quality reports into one single report.
+
+**input:** all quality reports, parameter with the intended name for the report
+
+**output:** comprehensive report (html)
+
 #### kallisto_index
 
-#### kallisto
+kallisto_index creates the index for kallisto, this functionality is separated in its own modules because the creation of the index only needs to happen once.
+
+**input:** reference genome (.fasta / .fa)
+
+**output:** kallisto index (.idx) 
+
+#### Kallisto
+
+[Kallisto](https://github.com/pachterlab/kallisto) is the first pseudo-aligner in this pipeline and is used to primarily get TPM values for the transcripts.
+
+**input:** paired-end reads (fq.gz), one forward and one reverse, index for kallisto (.idx)
+
+**output:** abundance file containing the TPM values (.tsv)
+
+#### salmon_index
+
+This module creates the salmon index for the following salmon module, unlike kallisto_index multiple files are generated all of which are needed for the following quantification
+
+**input:** reference genome in fasta format (.fasta / .fa)
+
+**output:** directory containing multiple files salmon uses as the index
+
+#### salmon
+
+[Salmon](https://salmon.readthedocs.io/en/latest/salmon.html) is the second pseudo-aligner used here, as with kallisto it is used to generate TPM values for the transcripts
+
+**input:** paired-end reads (.fq.gz), path to the directory containing the index files
+
+**output:** single quant.sf file
+
+#### bowtie2_index
+
+Bowtie2, the first true aligner in this pipeline, needs an index for the alignment. This module created this index.
+
+**input:** reference genome is fasta format (.fasta / .fa)
+
+**output:** directory containing six .bt2 files, all of which Bowtie2 needs for the following quantification.
+
+#### bowtie2
+
+This module does the alignment using [Bowtie2](https://github.com/BenLangmead/bowtie2).
+
+**input:** paired-end reads (.fq.gz), path to the directory containing the .bt2 files
+
+**output:** single .sam file (one .sam file from 2 reads (forward and reverse))
