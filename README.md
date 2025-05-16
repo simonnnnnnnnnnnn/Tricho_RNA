@@ -221,3 +221,26 @@ This module runs STAR and performs the quantification, all resulting files have 
 
 #### picard_alignment_summary
 
+Picards tool CollectAlignmentSummaryMetrics is used to create a summary/report on the results of the alignment.
+
+**input:** a single .bam file, a reference genome in fasta format (.fasta / .fa)
+
+**output:** text file containing the created summary
+
+#### picard_sort_sam (perhaps no longer necessary since bowtie and STAR can already sort the files by coordinate ----> check that)
+
+The tool SortSam (part of Picard) is used to sort bam-files by coordinates
+
+**input:** one .bam file
+
+**output:** sorted bam-file
+
+#### picard_validate
+
+#### picard mark_duplicates
+
+This module uses picards MarkDuplicates to mark duplicates, so downstream tools can provide more accurate results by taking these duplicates into account.
+
+**input:** bam-file
+
+**output:** marked bam-file, text file containing the metrics of the marking
