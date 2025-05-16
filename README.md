@@ -186,3 +186,38 @@ This module does the alignment using [Bowtie2](https://github.com/BenLangmead/bo
 **input:** paired-end reads (.fq.gz), path to the directory containing the .bt2 files
 
 **output:** single .sam file (one .sam file from 2 reads (forward and reverse))
+
+#### samtools
+
+Samtools is used to convert .sam to .bam and to sort the bam-files by coordinates
+
+**input:** single .sam file
+
+**output:** single .bam file
+
+#### stringtie
+
+Stringtie is used to get the expression levels from the .bam files --> TPM values
+
+**input:** .bam file, gene annotaion file (.gtf)
+
+**output:** tsv file containing the expression levels, another gtf file (that is not the main objective here)
+
+#### star_index
+
+As with the other (pseudo) aligners STAR also needs an index for the alignment to take place
+
+**input:** reference genome in fasta format (.fasta / .fa), reference gene annotation file (.gtf)
+
+**output:** directory containing all the index files STAR generates
+
+#### star
+
+This module runs STAR and performs the quantification, all resulting files have predetermined names but can be given prefixes, only the predetermined names are listed here.
+
+**input:** paired-end reads (.fq.gz), apth to the index-directory
+
+**output:** Log.out, Log.progress.out, Log.final.out, Aligned.sortedByCoord.out.bam, ReadsPerGene.out.tab
+
+#### picard_alignment_summary
+
