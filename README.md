@@ -113,11 +113,20 @@ values given in params.yml overwrite the defaults set in the code, therefore the
 
 ### Modules
 
-The modules contain the processes, here the actual work is done. All used tools have at least one Module dedicated to them.
+The modules contain the processes, here the actual work is done. All used tools have at least one Module dedicated to them. Each module has one process which runs a docker container with the necessary tool for the step. Modules and processes share the same name which usually resembles the name of the used tool or purpose of the tool. The results are always saved in directories named after the used tools.
 
 #### fastqc
 
+This module contains a single process that creates a docker container and runs FastQC inside it. The purpose of this is to create an inital quality reports of the reads.
+
+**Input:** single gzipped fastq file (.fq.gz)
+**output:** zip folder, html-file
+
 #### trim_galore
+
+This module runs TrimGalore! and consequently trims the reads and produces trimmed reads, trimming reports of the paired-end reads as well as a general trimming report.
+
+**input:** 
 
 #### multiqc
 
