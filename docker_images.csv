@@ -1,0 +1,17 @@
+name,image,repodigest
+fastqc and trim_galore,community.wave.seqera.io/library/trim-galore:0.6.10--1bf8ca4e1967cd18,community.wave.seqera.io/library/trim-galore@sha256:4f00e7b2a09f3c8d8a9ce955120e177152fb1e56f63a2a6e186088b1250d9907
+multiqc,community.wave.seqera.io/library/pip_multiqc:ad8f247edb55897c,community.wave.seqera.io/library/pip_multiqc@sha256:0ebb1d9605395a7df49ad0eb366b21f46afd96a5090376b0d8941cf5294a895a
+kallisto,quay.io/biocontainers/kallisto:0.51.1--ha4fb952_1,quay.io/biocontainers/kallisto@sha256:f2dc85d6d55e1c3bfdc437a7738b1217d0f81ee9c1c62013b5dd3b867713d482
+salmon,community.wave.seqera.io/library/salmon:1.10.3--fcd0755dd8abb423,community.wave.seqera.io/library/salmon@sha256:b4519ea6d76868516e8c545fd709bf900638cb4b9130206730e09038b2e9e274
+picard,community.wave.seqera.io/library/picard:3.4.0--e9963040df0a9bf6
+bowtie2,community.wave.seqera.io/library/bowtie2:2.5.4--d51920539234bea7,community.wave.seqera.io/library/bowtie2@sha256:7e95aab41e539b4696750e91020b20b09e45778688ebac01b3e3d03388aa6704
+samtools,community.wave.seqera.io/library/samtools:1.21--0d76da7c3cf7751c,community.wave.seqera.io/library/samtools@sha256:5e5188b3dacf0117c4d4db891f2b9f4873d93288b4cfb26c1fba43eb7d241a4c
+stringtie,community.wave.seqera.io/library/stringtie:3.0.0--26235bc768270d54,community.wave.seqera.io/library/stringtie@sha256:d3e1bd02a4dae3a2a7ca616e2f34892a01f0d9d41a0e80937f995aec93b9e5c8
+star,community.wave.seqera.io/library/star:2.7.11b--822039d47adf19a7,community.wave.seqera.io/library/star@sha256:25a18a65561065970d2bee3cc481949b58711c31b48499dd4e86df18aa69e3a8
+picard,community.wave.seqera.io/library/picard:3.4.0--e9963040df0a9bf6,community.wave.seqera.io/library/picard@sha256:e269216786463d44f9d83a0d6e877b34bca2c7b4d35211b4b369fe98e39ef1a5
+featurecounts,community.wave.seqera.io/library/subread:2.1.1--0ac4d7e46cd0c5d7,community.wave.seqera.io/library/subread@sha256:4b5569b45ab8d6f106b69cf5f682c34fce76e36871c8553f899eb54da58deb48
+picard_second_try,quay.io/biocontainers/picard:3.4.0--hdfd78af_0
+picard_third,quay.io/biocontainers/picard:2.26.10_cv2
+picard_fourth,broadinstitute/picard:latest,broadinstitute/picard@sha256:e57588109b67df22681acc9f6bd5be38a68c142450ccfd2d4dfc5883421cf54f
+gffread,quay.io/biocontainers/gffread:0.12.7--h077b44d_6
+bedtools,community.wave.seqera.io/library/bedtools:2.31.1--7c4ce4cb07c09ee4

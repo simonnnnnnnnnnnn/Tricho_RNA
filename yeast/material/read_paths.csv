@@ -1,0 +1,10 @@
+name,forward,reverse,condition
+rep1_ph5_co004,yeast/material/rep1_ph5_co004_1.fastq.gz,yeast/material/rep1_ph5_co004_2.fastq.gz,control
+rep2_ph5_co004,yeast/material/rep2_ph5_co004_1.fastq.gz,yeast/material/rep2_ph5_co004_2.fastq.gz,control
+rep3_ph5_co004,yeast/material/rep3_ph5_co004_1.fastq.gz,yeast/material/rep3_ph5_co004_2.fastq.gz,control
+rep1_ph5_co50,yeast/material/rep1_ph5_co50_1.fastq.gz,yeast/material/rep1_ph5_co50_2.fastq.gz,condition1
+rep2_ph5_co50,yeast/material/rep2_ph5_co50_1.fastq.gz,yeast/material/rep2_ph5_co50_2.fastq.gz,condition1
+rep3_ph5_co50,yeast/material/rep3_ph5_co50_1.fastq.gz,yeast/material/rep3_ph5_co50_2.fastq.gz,condition1
+rep1_ph3_co004,yeast/material/rep1_ph3_co004_1.fastq.gz,yeast/material/rep1_ph3_co004_2.fastq.gz,condtion2
+rep2_ph3_co004,yeast/material/rep2_ph3_co004_1.fastq.gz,yeast/material/rep2_ph3_co004_2.fastq.gz,condition2
+rep3_ph3_co004,yeast/material/rep3_ph3_co004_1.fastq.gz,yeast/material/rep3_ph3_co004_2.fastq.gz,condition2

@@ -1,0 +1,66 @@
+task_id	name	status	exit	module	container	cpus	time	disk	memory	%cpu	%mem	rss	vmem	peak_rss	peak_vmem
+11	fastqc (3)	CACHED	0	-	community.wave.seqera.io/library/trim-galore@sha256:4f00e7b2a09f3c8d8a9ce955120e177152fb1e56f63a2a6e186088b1250d9907	1	-	-	-	96.9%	1.7%	536.9 MB	3.4 GB	536.9 MB	3.5 GB
+10	fastqc (2)	CACHED	0	-	community.wave.seqera.io/library/trim-galore@sha256:4f00e7b2a09f3c8d8a9ce955120e177152fb1e56f63a2a6e186088b1250d9907	1	-	-	-	97.9%	1.7%	543.9 MB	3.4 GB	543.9 MB	3.4 GB
+6	star_index	CACHED	0	-	community.wave.seqera.io/library/star@sha256:25a18a65561065970d2bee3cc481949b58711c31b48499dd4e86df18aa69e3a8	1	-	-	-	98.2%	6.1%	1.9 GB	3.4 GB	1.9 GB	3.4 GB
+2	trim_galore (1)	CACHED	0	-	community.wave.seqera.io/library/trim-galore@sha256:4f00e7b2a09f3c8d8a9ce955120e177152fb1e56f63a2a6e186088b1250d9907	1	-	-	-	141.5%	0.8%	279.2 MB	3.4 GB	279.2 MB	3.4 GB
+4	kallisto_index	CACHED	0	-	quay.io/biocontainers/kallisto@sha256:f2dc85d6d55e1c3bfdc437a7738b1217d0f81ee9c1c62013b5dd3b867713d482	1	-	-	-	99.2%	2.3%	726.2 MB	800.6 MB	726.2 MB	846.6 MB
+3	salmon_index	CACHED	0	-	community.wave.seqera.io/library/salmon@sha256:b4519ea6d76868516e8c545fd709bf900638cb4b9130206730e09038b2e9e274	1	-	-	-	224.2%	0.8%	248 MB	732 MB	248 MB	732 MB
+1	bowtie2_index	CACHED	0	-	community.wave.seqera.io/library/bowtie2@sha256:7e95aab41e539b4696750e91020b20b09e45778688ebac01b3e3d03388aa6704	1	-	-	-	99.0%	0.3%	120.1 MB	249.1 MB	173.9 MB	249.1 MB
+12	fastqc (4)	CACHED	0	-	community.wave.seqera.io/library/trim-galore@sha256:4f00e7b2a09f3c8d8a9ce955120e177152fb1e56f63a2a6e186088b1250d9907	1	-	-	-	99.4%	1.8%	577.4 MB	3.4 GB	577.4 MB	3.4 GB
+5	fastqc (1)	CACHED	0	-	community.wave.seqera.io/library/trim-galore@sha256:4f00e7b2a09f3c8d8a9ce955120e177152fb1e56f63a2a6e186088b1250d9907	1	-	-	-	100.5%	1.8%	569.9 MB	3.4 GB	570 MB	3.4 GB
+8	trim_galore (3)	CACHED	0	-	community.wave.seqera.io/library/trim-galore@sha256:4f00e7b2a09f3c8d8a9ce955120e177152fb1e56f63a2a6e186088b1250d9907	1	-	-	-	145.6%	0.6%	193.1 MB	3.4 GB	193.1 MB	3.4 GB
+9	trim_galore (4)	CACHED	0	-	community.wave.seqera.io/library/trim-galore@sha256:4f00e7b2a09f3c8d8a9ce955120e177152fb1e56f63a2a6e186088b1250d9907	1	-	-	-	148.1%	0.4%	129.3 MB	3.4 GB	129.3 MB	3.4 GB
+7	trim_galore (2)	CACHED	0	-	community.wave.seqera.io/library/trim-galore@sha256:4f00e7b2a09f3c8d8a9ce955120e177152fb1e56f63a2a6e186088b1250d9907	1	-	-	-	146.3%	1.1%	374.1 MB	3.4 GB	374.1 MB	3.4 GB
+13	salmon (3)	CACHED	0	-	community.wave.seqera.io/library/salmon@sha256:b4519ea6d76868516e8c545fd709bf900638cb4b9130206730e09038b2e9e274	1	-	-	-	198.5%	2.2%	718.7 MB	1.3 GB	728.8 MB	1.3 GB
+17	kallisto (3)	CACHED	0	-	quay.io/biocontainers/kallisto@sha256:f2dc85d6d55e1c3bfdc437a7738b1217d0f81ee9c1c62013b5dd3b867713d482	1	-	-	-	93.1%	1.4%	446 MB	527.7 MB	448.8 MB	591.7 MB
+14	bowtie2 (4)	CACHED	0	-	community.wave.seqera.io/library/bowtie2@sha256:7e95aab41e539b4696750e91020b20b09e45778688ebac01b3e3d03388aa6704	1	-	-	-	200.4%	0.2%	83.2 MB	402.7 MB	83.2 MB	466.7 MB
+16	bowtie2 (2)	CACHED	0	-	community.wave.seqera.io/library/bowtie2@sha256:7e95aab41e539b4696750e91020b20b09e45778688ebac01b3e3d03388aa6704	1	-	-	-	200.1%	0.2%	83.9 MB	402.9 MB	83.9 MB	466.7 MB
+15	salmon (2)	CACHED	0	-	community.wave.seqera.io/library/salmon@sha256:b4519ea6d76868516e8c545fd709bf900638cb4b9130206730e09038b2e9e274	1	-	-	-	137.8%	2.2%	707.8 MB	1.3 GB	722.4 MB	1.3 GB
+24	salmon (4)	CACHED	0	-	community.wave.seqera.io/library/salmon@sha256:b4519ea6d76868516e8c545fd709bf900638cb4b9130206730e09038b2e9e274	1	-	-	-	137.1%	2.3%	726 MB	1.3 GB	726 MB	1.3 GB
+27	salmon (1)	CACHED	0	-	community.wave.seqera.io/library/salmon@sha256:b4519ea6d76868516e8c545fd709bf900638cb4b9130206730e09038b2e9e274	1	-	-	-	119.0%	2.2%	696.9 MB	1.3 GB	718.4 MB	1.3 GB
+26	star (1)	CACHED	0	-	community.wave.seqera.io/library/star@sha256:25a18a65561065970d2bee3cc481949b58711c31b48499dd4e86df18aa69e3a8	1	-	-	-	98.7%	6.3%	2 GB	2 GB	2 GB	2 GB
+23	star (4)	CACHED	0	-	community.wave.seqera.io/library/star@sha256:25a18a65561065970d2bee3cc481949b58711c31b48499dd4e86df18aa69e3a8	1	-	-	-	95.9%	6.3%	2 GB	2 GB	2 GB	2 GB
+30	sam_to_bam (2)	CACHED	0	-	community.wave.seqera.io/library/samtools@sha256:5e5188b3dacf0117c4d4db891f2b9f4873d93288b4cfb26c1fba43eb7d241a4c	1	-	-	-	99.3%	0.0%	7.1 MB	11.9 MB	7.1 MB	11.9 MB
+19	star (3)	CACHED	0	-	community.wave.seqera.io/library/star@sha256:25a18a65561065970d2bee3cc481949b58711c31b48499dd4e86df18aa69e3a8	1	-	-	-	99.4%	6.3%	2 GB	2 GB	2 GB	2 GB
+25	bowtie2 (1)	CACHED	0	-	community.wave.seqera.io/library/bowtie2@sha256:7e95aab41e539b4696750e91020b20b09e45778688ebac01b3e3d03388aa6704	1	-	-	-	188.8%	0.2%	83.2 MB	402.7 MB	83.2 MB	402.7 MB
+22	kallisto (4)	CACHED	0	-	quay.io/biocontainers/kallisto@sha256:f2dc85d6d55e1c3bfdc437a7738b1217d0f81ee9c1c62013b5dd3b867713d482	1	-	-	-	96.0%	1.4%	447.9 MB	527.7 MB	448.9 MB	591.7 MB
+18	kallisto (2)	CACHED	0	-	quay.io/biocontainers/kallisto@sha256:f2dc85d6d55e1c3bfdc437a7738b1217d0f81ee9c1c62013b5dd3b867713d482	1	-	-	-	92.3%	1.4%	446.2 MB	527.7 MB	448.8 MB	591.7 MB
+20	star (2)	CACHED	0	-	community.wave.seqera.io/library/star@sha256:25a18a65561065970d2bee3cc481949b58711c31b48499dd4e86df18aa69e3a8	1	-	-	-	98.9%	6.3%	2 GB	2 GB	2 GB	2 GB
+21	bowtie2 (3)	CACHED	0	-	community.wave.seqera.io/library/bowtie2@sha256:7e95aab41e539b4696750e91020b20b09e45778688ebac01b3e3d03388aa6704	1	-	-	-	200.0%	0.2%	83.5 MB	402.9 MB	83.5 MB	466.7 MB
+28	kallisto (1)	CACHED	0	-	quay.io/biocontainers/kallisto@sha256:f2dc85d6d55e1c3bfdc437a7738b1217d0f81ee9c1c62013b5dd3b867713d482	1	-	-	-	86.8%	1.4%	445.6 MB	527.7 MB	448.9 MB	591.7 MB
+31	samtools_star (1)	CACHED	0	-	community.wave.seqera.io/library/samtools@sha256:5e5188b3dacf0117c4d4db891f2b9f4873d93288b4cfb26c1fba43eb7d241a4c	1	-	-	-	96.2%	1.4%	437.5 MB	935.8 MB	459.7 MB	965.2 MB
+29	sam_to_bam (3)	CACHED	0	-	community.wave.seqera.io/library/samtools@sha256:5e5188b3dacf0117c4d4db891f2b9f4873d93288b4cfb26c1fba43eb7d241a4c	1	-	-	-	98.4%	0.0%	7.2 MB	11.9 MB	7.2 MB	11.9 MB
+37	sam_to_bam (4)	CACHED	0	-	community.wave.seqera.io/library/samtools@sha256:5e5188b3dacf0117c4d4db891f2b9f4873d93288b4cfb26c1fba43eb7d241a4c	1	-	-	-	99.4%	0.0%	7.2 MB	11.9 MB	7.2 MB	11.9 MB
+38	featurecounts_star (1)	CACHED	0	-	community.wave.seqera.io/library/subread@sha256:4b5569b45ab8d6f106b69cf5f682c34fce76e36871c8553f899eb54da58deb48	1	-	-	-	99.1%	0.1%	22.3 MB	136.3 MB	22.3 MB	200.3 MB
+39	picard_alignment_summary_star (1)	CACHED	0	-	community.wave.seqera.io/library/picard@sha256:e269216786463d44f9d83a0d6e877b34bca2c7b4d35211b4b369fe98e39ef1a5	1	-	-	-	153.8%	2.0%	638.1 MB	5.4 GB	638.6 MB	5.5 GB
+40	samtools_bowtie2 (3)	CACHED	0	-	community.wave.seqera.io/library/samtools@sha256:5e5188b3dacf0117c4d4db891f2b9f4873d93288b4cfb26c1fba43eb7d241a4c	1	-	-	-	99.2%	1.2%	387 MB	929.9 MB	410.6 MB	965.2 MB
+33	samtools_star (3)	CACHED	0	-	community.wave.seqera.io/library/samtools@sha256:5e5188b3dacf0117c4d4db891f2b9f4873d93288b4cfb26c1fba43eb7d241a4c	1	-	-	-	99.5%	2.7%	875.9 MB	1019.4 MB	908.7 MB	1019.4 MB
+42	samtools_bowtie2 (4)	CACHED	0	-	community.wave.seqera.io/library/samtools@sha256:5e5188b3dacf0117c4d4db891f2b9f4873d93288b4cfb26c1fba43eb7d241a4c	1	-	-	-	98.9%	1.4%	467.3 MB	935.7 MB	495.5 MB	965.2 MB
+34	sam_to_bam (1)	CACHED	0	-	community.wave.seqera.io/library/samtools@sha256:5e5188b3dacf0117c4d4db891f2b9f4873d93288b4cfb26c1fba43eb7d241a4c	1	-	-	-	98.8%	0.0%	7.2 MB	11.9 MB	7.2 MB	11.9 MB
+46	featurecounts_star (4)	CACHED	0	-	community.wave.seqera.io/library/subread@sha256:4b5569b45ab8d6f106b69cf5f682c34fce76e36871c8553f899eb54da58deb48	1	-	-	-	99.9%	0.1%	22.3 MB	136.3 MB	22.3 MB	200.3 MB
+45	picard_alignment_summary_bowtie2 (3)	CACHED	0	-	community.wave.seqera.io/library/picard@sha256:e269216786463d44f9d83a0d6e877b34bca2c7b4d35211b4b369fe98e39ef1a5	1	-	-	-	157.3%	2.0%	635.8 MB	5.4 GB	636 MB	5.5 GB
+47	featurecounts_bowtie2 (4)	CACHED	0	-	community.wave.seqera.io/library/subread@sha256:4b5569b45ab8d6f106b69cf5f682c34fce76e36871c8553f899eb54da58deb48	1	-	-	-	100.8%	0.1%	22.2 MB	136.3 MB	22.2 MB	200.3 MB
+43	featurecounts_bowtie2 (3)	CACHED	0	-	community.wave.seqera.io/library/subread@sha256:4b5569b45ab8d6f106b69cf5f682c34fce76e36871c8553f899eb54da58deb48	1	-	-	-	97.7%	0.1%	22.3 MB	136.3 MB	22.3 MB	200.3 MB
+48	samtools_bowtie2 (1)	CACHED	0	-	community.wave.seqera.io/library/samtools@sha256:5e5188b3dacf0117c4d4db891f2b9f4873d93288b4cfb26c1fba43eb7d241a4c	1	-	-	-	98.6%	0.9%	303.9 MB	899.6 MB	322.5 MB	941.2 MB
+32	samtools_bowtie2 (2)	CACHED	0	-	community.wave.seqera.io/library/samtools@sha256:5e5188b3dacf0117c4d4db891f2b9f4873d93288b4cfb26c1fba43eb7d241a4c	1	-	-	-	99.1%	1.1%	365.8 MB	928.3 MB	388.4 MB	965.2 MB
+41	multiqc	CACHED	0	-	community.wave.seqera.io/library/pip_multiqc@sha256:0ebb1d9605395a7df49ad0eb366b21f46afd96a5090376b0d8941cf5294a895a	1	-	-	-	80.8%	0.3%	111.2 MB	709.1 MB	111.2 MB	709.1 MB
+51	picard_alignment_summary_bowtie2 (4)	CACHED	0	-	community.wave.seqera.io/library/picard@sha256:e269216786463d44f9d83a0d6e877b34bca2c7b4d35211b4b369fe98e39ef1a5	1	-	-	-	158.3%	1.9%	632.5 MB	5.4 GB	634.2 MB	5.5 GB
+54	featurecounts_bowtie2 (1)	CACHED	0	-	community.wave.seqera.io/library/subread@sha256:4b5569b45ab8d6f106b69cf5f682c34fce76e36871c8553f899eb54da58deb48	1	-	-	-	99.5%	0.0%	6.7 MB	25.1 MB	6.7 MB	40.1 MB
+35	samtools_star (4)	CACHED	0	-	community.wave.seqera.io/library/samtools@sha256:5e5188b3dacf0117c4d4db891f2b9f4873d93288b4cfb26c1fba43eb7d241a4c	1	-	-	-	99.4%	1.6%	532.4 MB	943.5 MB	560.1 MB	965.2 MB
+36	samtools_star (1)	CACHED	0	-	community.wave.seqera.io/library/samtools@sha256:5e5188b3dacf0117c4d4db891f2b9f4873d93288b4cfb26c1fba43eb7d241a4c	1	-	-	-	99.5%	1.6%	507 MB	941.5 MB	533.2 MB	965.2 MB
+55	picard_alignment_summary_bowtie2 (1)	CACHED	0	-	community.wave.seqera.io/library/picard@sha256:e269216786463d44f9d83a0d6e877b34bca2c7b4d35211b4b369fe98e39ef1a5	1	-	-	-	170.9%	1.9%	630.3 MB	5.4 GB	630.6 MB	5.5 GB
+56	picard_alignment_summary_bowtie2 (2)	CACHED	0	-	community.wave.seqera.io/library/picard@sha256:e269216786463d44f9d83a0d6e877b34bca2c7b4d35211b4b369fe98e39ef1a5	1	-	-	-	168.6%	2.0%	634.4 MB	5.4 GB	635.4 MB	5.5 GB
+58	featurecounts_bowtie2 (2)	CACHED	0	-	community.wave.seqera.io/library/subread@sha256:4b5569b45ab8d6f106b69cf5f682c34fce76e36871c8553f899eb54da58deb48	1	-	-	-	99.6%	0.1%	22.2 MB	136.3 MB	22.2 MB	200.3 MB
+50	picard_alignment_summary_star (4)	CACHED	0	-	community.wave.seqera.io/library/picard@sha256:e269216786463d44f9d83a0d6e877b34bca2c7b4d35211b4b369fe98e39ef1a5	1	-	-	-	147.7%	2.1%	667.5 MB	5.4 GB	668.5 MB	5.5 GB
+61	picard_alignment_summary_star (3)	CACHED	0	-	community.wave.seqera.io/library/picard@sha256:e269216786463d44f9d83a0d6e877b34bca2c7b4d35211b4b369fe98e39ef1a5	1	-	-	-	148.1%	1.9%	624.9 MB	5.4 GB	625.4 MB	5.5 GB
+59	featurecounts_star (3)	CACHED	0	-	community.wave.seqera.io/library/subread@sha256:4b5569b45ab8d6f106b69cf5f682c34fce76e36871c8553f899eb54da58deb48	1	-	-	-	98.5%	0.1%	22.3 MB	136.3 MB	22.3 MB	200.3 MB
+60	featurecounts_star (2)	CACHED	0	-	community.wave.seqera.io/library/subread@sha256:4b5569b45ab8d6f106b69cf5f682c34fce76e36871c8553f899eb54da58deb48	1	-	-	-	95.9%	0.1%	22.2 MB	136.3 MB	22.2 MB	200.3 MB
+62	picard_alignment_summary_star (2)	CACHED	0	-	community.wave.seqera.io/library/picard@sha256:e269216786463d44f9d83a0d6e877b34bca2c7b4d35211b4b369fe98e39ef1a5	1	-	-	-	143.3%	1.9%	627.4 MB	5.4 GB	627.4 MB	5.5 GB
+65	calculate_tpms_star (4)	COMPLETED	0	-	python-tricho-rna	1	-	-	-	407.4%	0.0%	10.4 MB	15 MB	10.4 MB	15 MB
+49	calculate_tpms_star (2)	COMPLETED	0	-	python-tricho-rna	1	-	-	-	371.4%	0.0%	10.4 MB	15 MB	10.4 MB	15 MB
+53	calculate_tpms_bowtie2 (2)	COMPLETED	0	-	python-tricho-rna	1	-	-	-	204.0%	0.0%	11.6 MB	61.4 MB	11.6 MB	63.3 MB
+44	calculate_tpms_star (1)	COMPLETED	0	-	python-tricho-rna	1	-	-	-	137.7%	0.0%	10.5 MB	15 MB	10.5 MB	15 MB
+64	calculate_tpms_star (3)	COMPLETED	0	-	python-tricho-rna	1	-	-	-	135.8%	0.0%	10.3 MB	14 MB	10.3 MB	14 MB
+52	calculate_tpms_bowtie2 (1)	COMPLETED	0	-	python-tricho-rna	1	-	-	-	159.8%	0.0%	10.4 MB	15 MB	10.4 MB	15 MB
+57	calculate_tpms_bowtie2 (3)	COMPLETED	0	-	python-tricho-rna	1	-	-	-	175.5%	0.0%	10.7 MB	15.1 MB	10.7 MB	15.1 MB
+63	calculate_tpms_bowtie2 (4)	COMPLETED	0	-	python-tricho-rna	1	-	-	-	190.4%	0.0%	10.7 MB	15.1 MB	10.7 MB	15.1 MB

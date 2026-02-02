@@ -1,0 +1,4 @@
+NG-A5264_Trichoplax_adhaerens_WT_Platte_25_20_libLAP3444_1.fastq.gz
+NG-A5264_Trichoplax_adhaerens_WT_Platte_25_20_libLAP3444_2.fastq.gz
+NG-A5264_Trichoplax_adhaerens_WT_Platte_25_24_libLAP3445_1.fastq.gz
+NG-A5264_Trichoplax_adhaerens_WT_Platte_25_24_libLAP3445_2.fastq.gz

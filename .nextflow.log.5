@@ -1,0 +1,244 @@
+May-17 20:07:33.290 [main] DEBUG nextflow.cli.Launcher - $> nextflow run rna_pipe.nf
+May-17 20:07:33.399 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.10.6
+May-17 20:07:33.429 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/root/.nextflow/plugins; core-plugins: nf-amazon@2.9.3,nf-azure@1.10.2,nf-cloudcache@0.4.2,nf-codecommit@0.2.2,nf-console@1.1.4,nf-google@1.15.4,nf-tower@1.9.3,nf-wave@1.7.5
+May-17 20:07:33.457 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+May-17 20:07:33.461 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+May-17 20:07:33.465 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+May-17 20:07:33.476 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+May-17 20:07:33.497 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/ubuntu/project/rna/nextflow.config
+May-17 20:07:33.500 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/ubuntu/project/rna/nextflow.config
+May-17 20:07:33.530 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /root/.nextflow/secrets/store.json
+May-17 20:07:33.533 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@77128dab] - activable => nextflow.secret.LocalSecretsProvider@77128dab
+May-17 20:07:33.539 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+May-17 20:07:33.975 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+May-17 20:07:33.993 [main] DEBUG nextflow.cli.CmdRun - Launching `rna_pipe.nf` [tiny_panini] DSL2 - revision: 643f72accb
+May-17 20:07:33.994 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+May-17 20:07:33.995 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+May-17 20:07:34.048 [main] DEBUG nextflow.Session - Session UUID: 2bb06871-c0ac-4510-b0b6-69c1988d59d1
+May-17 20:07:34.048 [main] DEBUG nextflow.Session - Run name: tiny_panini
+May-17 20:07:34.048 [main] DEBUG nextflow.Session - Executor pool size: 14
+May-17 20:07:34.056 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+May-17 20:07:34.061 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=42; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+May-17 20:07:34.086 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.10.6 build 5937
+  Created: 23-04-2025 16:53 UTC 
+  System: Linux 5.15.0-140-generic
+  Runtime: Groovy 4.0.23 on OpenJDK 64-Bit Server VM 21.0.7+6-Ubuntu-0ubuntu122.04
+  Encoding: UTF-8 (UTF-8)
+  Process: 2300@trichopipes-82c22 [192.168.0.167]
+  CPUs: 14 - Mem: 31.3 GB (29.9 GB) - Swap: 1024 MB (1024 MB)
+May-17 20:07:34.103 [main] DEBUG nextflow.Session - Work-dir: /home/ubuntu/project/rna/work [ext2/ext3]
+May-17 20:07:34.103 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/ubuntu/project/rna/bin
+May-17 20:07:34.112 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+May-17 20:07:34.121 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+May-17 20:07:34.151 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+May-17 20:07:34.160 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 15; maxThreads: 1000
+May-17 20:07:34.218 [main] DEBUG nextflow.Session - Session start
+May-17 20:07:34.220 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: /home/ubuntu/project/rna/rna_trace.txt
+May-17 20:07:34.442 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+May-17 20:07:35.250 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-17 20:07:35.251 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-17 20:07:35.256 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+May-17 20:07:35.263 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=14; memory=31.3 GB; capacity=14; pollInterval=100ms; dumpInterval=5m
+May-17 20:07:35.265 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+May-17 20:07:35.330 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-17 20:07:35.330 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-17 20:07:35.349 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-17 20:07:35.350 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-17 20:07:35.361 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-17 20:07:35.361 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-17 20:07:35.367 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-17 20:07:35.367 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-17 20:07:35.372 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-17 20:07:35.372 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-17 20:07:35.377 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-17 20:07:35.377 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-17 20:07:35.382 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-17 20:07:35.382 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-17 20:07:35.387 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-17 20:07:35.387 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-17 20:07:35.392 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-17 20:07:35.392 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-17 20:07:35.397 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-17 20:07:35.397 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-17 20:07:35.403 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-17 20:07:35.404 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-17 20:07:35.412 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-17 20:07:35.412 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-17 20:07:35.418 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-17 20:07:35.418 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-17 20:07:35.421 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: bowtie2_index, bowtie2, star, featurecounts, picard_sort_sam, samtools, stringtie, salmon, picard_mark_duplicates, picard_validate, trim_galore, kallisto, picard_seq_dict, fastqc, star_index, kallisto_index, finish_pipeline, salmon_index, benchmarks, picard_alignment_summary, multiqc
+May-17 20:07:35.421 [main] DEBUG nextflow.Session - Igniting dataflow network (15)
+May-17 20:07:35.427 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > fastqc
+May-17 20:07:35.427 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > trim_galore
+May-17 20:07:35.427 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > multiqc
+May-17 20:07:35.428 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > kallisto_index
+May-17 20:07:35.428 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > kallisto
+May-17 20:07:35.429 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > salmon_index
+May-17 20:07:35.429 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > salmon
+May-17 20:07:35.429 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > bowtie2_index
+May-17 20:07:35.429 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > bowtie2
+May-17 20:07:35.429 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > samtools
+May-17 20:07:35.429 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > stringtie
+May-17 20:07:35.430 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > star_index
+May-17 20:07:35.430 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > star
+May-17 20:07:35.430 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > picard_alignment_summary
+May-17 20:07:35.430 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_4165ab9ced0292ad: /home/ubuntu/project/rna/./modules/star.nf
+  Script_b9464c1409fe9d81: /home/ubuntu/project/rna/./modules/finish_pipeline.nf
+  Script_53e2b57a753f4bb9: /home/ubuntu/project/rna/./modules/picard_alignment_summary.nf
+  Script_74e7df9ca9568c55: /home/ubuntu/project/rna/./modules/bowtie2.nf
+  Script_98983901d1368997: /home/ubuntu/project/rna/./modules/benchmarks.nf
+  Script_efac1f915e415017: /home/ubuntu/project/rna/./modules/fastqc.nf
+  Script_34a22b5fc8389ac6: /home/ubuntu/project/rna/./modules/featurecounts.nf
+  Script_54541880b8f47a5e: /home/ubuntu/project/rna/./modules/trim_galore.nf
+  Script_4399f064cbdcf9cd: /home/ubuntu/project/rna/rna_pipe.nf
+  Script_158bbc781c14b702: /home/ubuntu/project/rna/./modules/picard_sort_sam.nf
+  Script_337e24ca4805bfd9: /home/ubuntu/project/rna/./modules/kallisto.nf
+  Script_111813aaf381f6ee: /home/ubuntu/project/rna/./modules/multiqc.nf
+  Script_7dab4f489719305d: /home/ubuntu/project/rna/./modules/salmon_index.nf
+  Script_c779c388f3ca21b9: /home/ubuntu/project/rna/./modules/samtools.nf
+  Script_68632cb614b83b60: /home/ubuntu/project/rna/./modules/star_index.nf
+  Script_7792c60ff93d31da: /home/ubuntu/project/rna/./modules/salmon.nf
+  Script_6e7a127fb09853e4: /home/ubuntu/project/rna/./modules/picard_validate.nf
+  Script_f646d123532c08e4: /home/ubuntu/project/rna/./modules/kallisto_index.nf
+  Script_0df52a4226629c53: /home/ubuntu/project/rna/./modules/picard_mark_duplicates.nf
+  Script_64321f2f41124c25: /home/ubuntu/project/rna/./modules/stringtie.nf
+  Script_995b62d528491dbf: /home/ubuntu/project/rna/./modules/picard_seq_dict.nf
+  Script_42c7fd8b2906c789: /home/ubuntu/project/rna/./modules/bowtie2_index.nf
+May-17 20:07:35.431 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+May-17 20:07:35.431 [main] DEBUG nextflow.Session - Session await
+May-17 20:07:35.627 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-17 20:07:35.630 [Task submitter] INFO  nextflow.Session - [1d/878755] Submitted process > trim_galore (1)
+May-17 20:07:35.641 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-17 20:07:35.641 [Task submitter] INFO  nextflow.Session - [8c/270220] Submitted process > fastqc (1)
+May-17 20:07:35.649 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-17 20:07:35.649 [Task submitter] INFO  nextflow.Session - [f0/1dc72c] Submitted process > fastqc (4)
+May-17 20:07:35.658 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-17 20:07:35.660 [Task submitter] INFO  nextflow.Session - [55/41fc0f] Submitted process > trim_galore (2)
+May-17 20:07:35.674 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-17 20:07:35.675 [Task submitter] INFO  nextflow.Session - [50/500b65] Submitted process > bowtie2_index
+May-17 20:07:35.680 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-17 20:07:35.681 [Task submitter] INFO  nextflow.Session - [9c/4ae1e9] Submitted process > trim_galore (4)
+May-17 20:07:35.686 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-17 20:07:35.686 [Task submitter] INFO  nextflow.Session - [21/42a1e9] Submitted process > kallisto_index
+May-17 20:07:35.690 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-17 20:07:35.691 [Task submitter] INFO  nextflow.Session - [76/642660] Submitted process > salmon_index
+May-17 20:07:35.695 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-17 20:07:35.696 [Task submitter] INFO  nextflow.Session - [0c/e245e4] Submitted process > star_index
+May-17 20:07:35.701 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-17 20:07:35.703 [Task submitter] INFO  nextflow.Session - [a2/647b46] Submitted process > fastqc (3)
+May-17 20:07:35.708 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-17 20:07:35.708 [Task submitter] INFO  nextflow.Session - [e9/a84e39] Submitted process > fastqc (2)
+May-17 20:07:35.713 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-17 20:07:35.714 [Task submitter] INFO  nextflow.Session - [6b/fad1ff] Submitted process > trim_galore (3)
+May-17 20:07:49.359 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: fastqc (1); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/project/rna/work/8c/270220930bda4416d9a928f3016b26]
+May-17 20:07:49.360 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=42; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+May-17 20:07:49.408 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: fastqc (3); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/project/rna/work/a2/647b469d9e82e185803bfffe57f823]
+May-17 20:07:50.261 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: fastqc (4); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/project/rna/work/f0/1dc72c8a0557da08d1c38bdad4f40b]
+May-17 20:07:50.864 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: fastqc (2); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/project/rna/work/e9/a84e39763154c6d78d3160cae3bfa9]
+May-17 20:08:20.840 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: trim_galore (1); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/project/rna/work/1d/8787555f634aa07a86ea71ccf0d820]
+May-17 20:08:28.151 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 11; name: trim_galore (3); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/project/rna/work/6b/fad1ffb8a92e389028a3cff498e67a]
+May-17 20:08:29.956 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 12; name: trim_galore (4); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/project/rna/work/9c/4ae1e9e91d441b405300b296feeb2e]
+May-17 20:08:36.586 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: trim_galore (2); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/project/rna/work/55/41fc0f4ac783fd42247efa0ec5092e]
+May-17 20:08:36.642 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-17 20:08:36.643 [Task submitter] INFO  nextflow.Session - [ed/ed91cb] Submitted process > multiqc
+May-17 20:08:36.936 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: salmon_index; status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/project/rna/work/76/642660d3f14dcb7e78c97ea6bb85c3]
+May-17 20:08:37.011 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-17 20:08:37.015 [Task submitter] INFO  nextflow.Session - [9c/909e77] Submitted process > salmon (2)
+May-17 20:08:37.021 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-17 20:08:37.022 [Task submitter] INFO  nextflow.Session - [30/2e46e3] Submitted process > salmon (1)
+May-17 20:08:37.025 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-17 20:08:37.026 [Task submitter] INFO  nextflow.Session - [54/ab1ffe] Submitted process > salmon (3)
+May-17 20:08:37.032 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-17 20:08:37.032 [Task submitter] INFO  nextflow.Session - [64/0ff901] Submitted process > salmon (4)
+May-17 20:08:38.688 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: bowtie2_index; status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/project/rna/work/50/500b656be5043a8771cbab3d1c41bc]
+May-17 20:08:38.712 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-17 20:08:38.713 [Task submitter] INFO  nextflow.Session - [38/d9c140] Submitted process > bowtie2 (3)
+May-17 20:08:38.716 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-17 20:08:38.717 [Task submitter] INFO  nextflow.Session - [d5/c485dc] Submitted process > bowtie2 (1)
+May-17 20:08:38.720 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-17 20:08:38.721 [Task submitter] INFO  nextflow.Session - [15/315662] Submitted process > bowtie2 (4)
+May-17 20:08:38.725 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-17 20:08:38.725 [Task submitter] INFO  nextflow.Session - [68/74a054] Submitted process > bowtie2 (2)
+May-17 20:08:40.860 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 13; name: multiqc; status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/project/rna/work/ed/ed91cbe1a94936a0315aa3a7110fcb]
+May-17 20:08:43.576 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 15; name: salmon (2); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/project/rna/work/9c/909e77f92de482db7c652ba4891d27]
+May-17 20:08:43.872 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 17; name: salmon (4); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/project/rna/work/64/0ff901604c634d5764db71d5b52474]
+May-17 20:08:44.348 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 14; name: salmon (1); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/project/rna/work/30/2e46e3b81a794000bfe6af25d77069]
+May-17 20:08:44.924 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 16; name: salmon (3); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/project/rna/work/54/ab1ffe8df44ae66c0bc7a704476f3d]
+May-17 20:08:48.654 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: star_index; status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/project/rna/work/0c/e245e4b3c97c63b82ce185ee388376]
+May-17 20:08:48.674 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-17 20:08:48.674 [Task submitter] INFO  nextflow.Session - [b9/7347c0] Submitted process > star (3)
+May-17 20:08:48.680 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-17 20:08:48.680 [Task submitter] INFO  nextflow.Session - [bd/7f5137] Submitted process > star (2)
+May-17 20:08:48.718 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-17 20:08:48.719 [Task submitter] INFO  nextflow.Session - [40/1e22d2] Submitted process > star (1)
+May-17 20:08:48.731 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-17 20:08:48.731 [Task submitter] INFO  nextflow.Session - [84/b337e5] Submitted process > star (4)
+May-17 20:09:27.657 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 22; name: star (1); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/project/rna/work/40/1e22d26a1c117eb4f2632242f0b80a]
+May-17 20:09:27.680 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-17 20:09:27.681 [Task submitter] INFO  nextflow.Session - [11/1bd4ce] Submitted process > picard_alignment_summary (1)
+May-17 20:09:37.719 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 26; name: picard_alignment_summary (1); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/project/rna/work/11/1bd4cea25afdc8541f9511b07230cb]
+May-17 20:09:38.799 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 23; name: star (2); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/project/rna/work/bd/7f51371a20d72e0392ffa526f1bd4c]
+May-17 20:09:38.814 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-17 20:09:38.815 [Task submitter] INFO  nextflow.Session - [6a/e87bc5] Submitted process > picard_alignment_summary (2)
+May-17 20:09:42.250 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 24; name: star (3); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/project/rna/work/b9/7347c03a1ca9a8514f09c11879909c]
+May-17 20:09:42.284 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-17 20:09:42.284 [Task submitter] INFO  nextflow.Session - [7f/aa2ab0] Submitted process > picard_alignment_summary (3)
+May-17 20:09:47.606 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 27; name: picard_alignment_summary (2); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/project/rna/work/6a/e87bc5e1d8b8068d5921bcb6301f87]
+May-17 20:09:50.354 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 25; name: star (4); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/project/rna/work/84/b337e5b4132d7c91bf96fe337c1e9f]
+May-17 20:09:50.368 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-17 20:09:50.369 [Task submitter] INFO  nextflow.Session - [eb/e53fce] Submitted process > picard_alignment_summary (4)
+May-17 20:09:50.653 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: kallisto_index; status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/project/rna/work/21/42a1e9e332e1b0a7b4d20d99060f49]
+May-17 20:09:50.669 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-17 20:09:50.670 [Task submitter] INFO  nextflow.Session - [61/4a2178] Submitted process > kallisto (3)
+May-17 20:09:50.675 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-17 20:09:50.675 [Task submitter] INFO  nextflow.Session - [c3/2894cc] Submitted process > kallisto (4)
+May-17 20:09:50.679 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-17 20:09:50.680 [Task submitter] INFO  nextflow.Session - [9f/2c8ce4] Submitted process > kallisto (2)
+May-17 20:09:50.683 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-17 20:09:50.684 [Task submitter] INFO  nextflow.Session - [be/154231] Submitted process > kallisto (1)
+May-17 20:09:52.028 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 28; name: picard_alignment_summary (3); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/project/rna/work/7f/aa2ab04d3fc29619379330ef02d5e0]
+May-17 20:10:02.384 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 29; name: picard_alignment_summary (4); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/project/rna/work/eb/e53fcee00cf73cefedde47a223412e]
+May-17 20:10:02.902 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 30; name: kallisto (1); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/project/rna/work/be/154231451a2272438fab06814ae3b2]
+May-17 20:10:03.276 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 31; name: kallisto (2); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/project/rna/work/9f/2c8ce4382fde98c79a9941b97d9bbf]
+May-17 20:10:03.529 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 32; name: kallisto (3); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/project/rna/work/61/4a2178016818666562da749924ee6d]
+May-17 20:10:04.369 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 33; name: kallisto (4); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/project/rna/work/c3/2894ccc3ed13c16bd9ea864c8a489b]
+May-17 20:10:10.881 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 18; name: bowtie2 (1); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/project/rna/work/d5/c485dcca38d3b00d36b5c0fd85b2bd]
+May-17 20:10:10.897 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-17 20:10:10.897 [Task submitter] INFO  nextflow.Session - [62/b96990] Submitted process > samtools (1)
+May-17 20:10:20.559 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 34; name: samtools (1); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/project/rna/work/62/b969909c70c1ab9aaccbfadfb07d97]
+May-17 20:10:20.575 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-17 20:10:20.575 [Task submitter] INFO  nextflow.Session - [85/04f8de] Submitted process > stringtie (1)
+May-17 20:10:23.057 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 35; name: stringtie (1); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/project/rna/work/85/04f8ded602e399201ffac173de0a45]
+May-17 20:10:32.115 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 19; name: bowtie2 (2); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/project/rna/work/68/74a0540d762f308fdc1af76aef24a6]
+May-17 20:10:32.128 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-17 20:10:32.129 [Task submitter] INFO  nextflow.Session - [19/1b440f] Submitted process > samtools (2)
+May-17 20:10:33.010 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 20; name: bowtie2 (3); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/project/rna/work/38/d9c140633939938254bb70d71c35cb]
+May-17 20:10:33.024 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-17 20:10:33.025 [Task submitter] INFO  nextflow.Session - [f9/253c3b] Submitted process > samtools (3)
+May-17 20:10:44.203 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 36; name: samtools (2); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/project/rna/work/19/1b440f4bce8a91def1681d84dda9e5]
+May-17 20:10:44.225 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-17 20:10:44.226 [Task submitter] INFO  nextflow.Session - [59/921535] Submitted process > stringtie (2)
+May-17 20:10:45.774 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 37; name: samtools (3); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/project/rna/work/f9/253c3be2a1a15019ec57191060cd3d]
+May-17 20:10:45.792 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-17 20:10:45.793 [Task submitter] INFO  nextflow.Session - [88/218344] Submitted process > stringtie (3)
+May-17 20:10:46.942 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 38; name: stringtie (2); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/project/rna/work/59/9215359e7414f097cb2b8d77dc18e3]
+May-17 20:10:48.347 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 39; name: stringtie (3); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/project/rna/work/88/21834426581c72dc0e8b69862463a8]
+May-17 20:11:13.765 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 21; name: bowtie2 (4); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/project/rna/work/15/31566216041d9a31438f6c6fe0fbca]
+May-17 20:11:13.777 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-17 20:11:13.777 [Task submitter] INFO  nextflow.Session - [ef/db1e1a] Submitted process > samtools (4)
+May-17 20:11:28.080 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 40; name: samtools (4); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/project/rna/work/ef/db1e1acee0b3f7d39928a8e3bfd948]
+May-17 20:11:28.107 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-17 20:11:28.107 [Task submitter] INFO  nextflow.Session - [5a/0ad30e] Submitted process > stringtie (4)
+May-17 20:11:31.063 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 41; name: stringtie (4); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/project/rna/work/5a/0ad30eff0062aaa150250e346f0ff6]
+May-17 20:11:31.070 [main] DEBUG nextflow.Session - Session await > all processes finished
+May-17 20:11:31.164 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+May-17 20:11:31.165 [main] DEBUG nextflow.Session - Session await > all barriers passed
+May-17 20:11:31.172 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+May-17 20:11:31.181 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=41; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=23m 34s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=12; peakCpus=12; peakMemory=0; ]
+May-17 20:11:31.181 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow completed -- saving trace file
+May-17 20:11:31.183 [main] DEBUG nextflow.trace.ReportObserver - Workflow completed -- rendering execution report
+May-17 20:11:32.021 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+May-17 20:11:32.053 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+May-17 20:11:32.054 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

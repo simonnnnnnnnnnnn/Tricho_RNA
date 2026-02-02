@@ -1,0 +1,47 @@
+Jul-13 01:26:07.996 [main] DEBUG nextflow.cli.Launcher - $> nextflow run rna_pipe.nf -preview -with-dag rna_flow.png
+Jul-13 01:26:08.084 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.10.6
+Jul-13 01:26:08.109 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/root/.nextflow/plugins; core-plugins: nf-amazon@2.9.3,nf-azure@1.10.2,nf-cloudcache@0.4.2,nf-codecommit@0.2.2,nf-console@1.1.4,nf-google@1.15.4,nf-tower@1.9.3,nf-wave@1.7.5
+Jul-13 01:26:08.144 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jul-13 01:26:08.145 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jul-13 01:26:08.148 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Jul-13 01:26:08.159 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jul-13 01:26:08.178 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/simon/Documents/uni/semester8/praxis/rna/nextflow.config
+Jul-13 01:26:08.182 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/simon/Documents/uni/semester8/praxis/rna/nextflow.config
+Jul-13 01:26:08.237 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /root/.nextflow/secrets/store.json
+Jul-13 01:26:08.241 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@56f2bbea] - activable => nextflow.secret.LocalSecretsProvider@56f2bbea
+Jul-13 01:26:08.249 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Jul-13 01:26:08.736 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Jul-13 01:26:08.756 [main] DEBUG nextflow.cli.CmdRun - * PREVIEW * null [amazing_plateau] DSL2 - revision: e7204d6cf2
+Jul-13 01:26:08.757 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jul-13 01:26:08.757 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jul-13 01:26:08.814 [main] DEBUG nextflow.Session - Session UUID: b5736103-520c-4723-814e-c96b1d89f72f
+Jul-13 01:26:08.815 [main] DEBUG nextflow.Session - Run name: amazing_plateau
+Jul-13 01:26:08.815 [main] DEBUG nextflow.Session - Executor pool size: 4
+Jul-13 01:26:08.822 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jul-13 01:26:08.828 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jul-13 01:26:08.854 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.10.6 build 5937
+  Created: 23-04-2025 16:53 UTC (18:53 CEST)
+  System: Linux 6.8.0-60-generic
+  Runtime: Groovy 4.0.23 on Java HotSpot(TM) 64-Bit Server VM 21+35-LTS-2513
+  Encoding: UTF-8 (UTF-8)
+  Process: 349083@simon-Aspire-A51 [127.0.1.1]
+  CPUs: 4 - Mem: 7.6 GB (141.5 MB) - Swap: 2 GB (152 KB)
+Jul-13 01:26:08.883 [main] DEBUG nextflow.Session - Work-dir: /home/ubuntu/point/work [ext2/ext3]
+Jul-13 01:26:08.884 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/simon/Documents/uni/semester8/praxis/rna/bin
+Jul-13 01:26:08.895 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jul-13 01:26:08.906 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jul-13 01:26:08.960 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jul-13 01:26:08.972 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 5; maxThreads: 1000
+Jul-13 01:26:09.038 [main] DEBUG nextflow.Session - Session start
+Jul-13 01:26:09.040 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: /home/simon/Documents/uni/semester8/praxis/rna/trace-20250713-5168910.txt
+Jul-13 01:26:09.048 [main] DEBUG nextflow.cli.Launcher - Operation aborted
+nextflow.exception.AbortOperationException: DAG file already exists: /home/simon/Documents/uni/semester8/praxis/rna/rna_flow.png -- enable `dag.overwrite` in your config file to overwrite existing DAG files
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.trace.GraphObserver.onFlowCreate(GraphObserver.groovy:76)
+	at nextflow.Session.notifyFlowCreate(Session.groovy:1123)
+	at nextflow.Session.start(Session.groovy:566)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:132)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:376)
+	at nextflow.cli.Launcher.run(Launcher.groovy:503)
+	at nextflow.cli.Launcher.main(Launcher.groovy:658)

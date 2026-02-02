@@ -1,0 +1,175 @@
+May-16 22:36:03.755 [main] DEBUG nextflow.cli.Launcher - $> nextflow run rna_pipe.nf -resume -with-trace
+May-16 22:36:03.886 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.10.6
+May-16 22:36:03.925 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/root/.nextflow/plugins; core-plugins: nf-amazon@2.9.3,nf-azure@1.10.2,nf-cloudcache@0.4.2,nf-codecommit@0.2.2,nf-console@1.1.4,nf-google@1.15.4,nf-tower@1.9.3,nf-wave@1.7.5
+May-16 22:36:03.958 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+May-16 22:36:03.959 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+May-16 22:36:03.962 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+May-16 22:36:03.977 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+May-16 22:36:04.000 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/ubuntu/project/rna/nextflow.config
+May-16 22:36:04.003 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/ubuntu/project/rna/nextflow.config
+May-16 22:36:04.037 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /root/.nextflow/secrets/store.json
+May-16 22:36:04.040 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@c9d82f9] - activable => nextflow.secret.LocalSecretsProvider@c9d82f9
+May-16 22:36:04.047 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+May-16 22:36:04.495 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+May-16 22:36:04.517 [main] DEBUG nextflow.cli.CmdRun - Launching `rna_pipe.nf` [shrivelled_stone] DSL2 - revision: 29bb1e2d91
+May-16 22:36:04.519 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+May-16 22:36:04.520 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+May-16 22:36:04.571 [main] DEBUG nextflow.Session - Session UUID: 0243c7a1-afe0-462f-8fd2-814300cd3e4d
+May-16 22:36:04.572 [main] DEBUG nextflow.Session - Run name: shrivelled_stone
+May-16 22:36:04.572 [main] DEBUG nextflow.Session - Executor pool size: 14
+May-16 22:36:04.580 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+May-16 22:36:04.586 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=42; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+May-16 22:36:04.616 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.10.6 build 5937
+  Created: 23-04-2025 16:53 UTC 
+  System: Linux 5.15.0-139-generic
+  Runtime: Groovy 4.0.23 on OpenJDK 64-Bit Server VM 21.0.7+6-Ubuntu-0ubuntu122.04
+  Encoding: UTF-8 (UTF-8)
+  Process: 9329@trichopipes-82c22 [192.168.0.167]
+  CPUs: 14 - Mem: 31.3 GB (29 GB) - Swap: 1024 MB (1024 MB)
+May-16 22:36:04.651 [main] DEBUG nextflow.Session - Work-dir: /home/ubuntu/project/rna/work [ext2/ext3]
+May-16 22:36:04.651 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/ubuntu/project/rna/bin
+May-16 22:36:04.662 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+May-16 22:36:04.672 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+May-16 22:36:04.704 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+May-16 22:36:04.714 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 15; maxThreads: 1000
+May-16 22:36:04.809 [main] DEBUG nextflow.Session - Session start
+May-16 22:36:04.812 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: /home/ubuntu/project/rna/trace-20250516-81364470.txt
+May-16 22:36:05.158 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+May-16 22:36:05.994 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-16 22:36:05.995 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-16 22:36:06.001 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+May-16 22:36:06.008 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=14; memory=31.3 GB; capacity=14; pollInterval=100ms; dumpInterval=5m
+May-16 22:36:06.010 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+May-16 22:36:06.078 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-16 22:36:06.079 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-16 22:36:06.127 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-16 22:36:06.128 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-16 22:36:06.144 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-16 22:36:06.144 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-16 22:36:06.151 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-16 22:36:06.151 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-16 22:36:06.158 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-16 22:36:06.158 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-16 22:36:06.164 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-16 22:36:06.164 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-16 22:36:06.169 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-16 22:36:06.169 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-16 22:36:06.174 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-16 22:36:06.174 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-16 22:36:06.179 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-16 22:36:06.179 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-16 22:36:06.185 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-16 22:36:06.185 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-16 22:36:06.190 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-16 22:36:06.190 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-16 22:36:06.198 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-16 22:36:06.198 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-16 22:36:06.204 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-16 22:36:06.204 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-16 22:36:06.208 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-16 22:36:06.208 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-16 22:36:06.215 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-16 22:36:06.216 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-16 22:36:06.221 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-16 22:36:06.221 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-16 22:36:06.225 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: bowtie2_index, bowtie2, star, featurecounts, picard_sort_sam, samtools, stringtie, salmon, picard_mark_duplicates, picard_validate, trim_galore, kallisto, picard_seq_dict, fastqc, star_index, kallisto_index, salmon_index, picard_alignment_summary, multiqc
+May-16 22:36:06.225 [main] DEBUG nextflow.Session - Igniting dataflow network (18)
+May-16 22:36:06.233 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > fastqc
+May-16 22:36:06.234 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > trim_galore
+May-16 22:36:06.234 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > multiqc
+May-16 22:36:06.234 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > kallisto_index
+May-16 22:36:06.235 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > kallisto
+May-16 22:36:06.235 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > salmon_index
+May-16 22:36:06.235 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > salmon
+May-16 22:36:06.235 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > bowtie2_index
+May-16 22:36:06.235 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > bowtie2
+May-16 22:36:06.235 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > samtools
+May-16 22:36:06.236 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > stringtie
+May-16 22:36:06.236 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > star_index
+May-16 22:36:06.236 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > star
+May-16 22:36:06.236 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > picard_alignment_summary
+May-16 22:36:06.236 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > picard_sort_sam
+May-16 22:36:06.236 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > picard_seq_dict
+May-16 22:36:06.237 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > featurecounts
+May-16 22:36:06.240 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_4165ab9ced0292ad: /home/ubuntu/project/rna/./modules/star.nf
+  Script_18c53e2653fd354f: /home/ubuntu/project/rna/rna_pipe.nf
+  Script_53e2b57a753f4bb9: /home/ubuntu/project/rna/./modules/picard_alignment_summary.nf
+  Script_74e7df9ca9568c55: /home/ubuntu/project/rna/./modules/bowtie2.nf
+  Script_efac1f915e415017: /home/ubuntu/project/rna/./modules/fastqc.nf
+  Script_34a22b5fc8389ac6: /home/ubuntu/project/rna/./modules/featurecounts.nf
+  Script_54541880b8f47a5e: /home/ubuntu/project/rna/./modules/trim_galore.nf
+  Script_337e24ca4805bfd9: /home/ubuntu/project/rna/./modules/kallisto.nf
+  Script_158bbc781c14b702: /home/ubuntu/project/rna/./modules/picard_sort_sam.nf
+  Script_111813aaf381f6ee: /home/ubuntu/project/rna/./modules/multiqc.nf
+  Script_7dab4f489719305d: /home/ubuntu/project/rna/./modules/salmon_index.nf
+  Script_c779c388f3ca21b9: /home/ubuntu/project/rna/./modules/samtools.nf
+  Script_68632cb614b83b60: /home/ubuntu/project/rna/./modules/star_index.nf
+  Script_7792c60ff93d31da: /home/ubuntu/project/rna/./modules/salmon.nf
+  Script_6e7a127fb09853e4: /home/ubuntu/project/rna/./modules/picard_validate.nf
+  Script_f646d123532c08e4: /home/ubuntu/project/rna/./modules/kallisto_index.nf
+  Script_0df52a4226629c53: /home/ubuntu/project/rna/./modules/picard_mark_duplicates.nf
+  Script_64321f2f41124c25: /home/ubuntu/project/rna/./modules/stringtie.nf
+  Script_995b62d528491dbf: /home/ubuntu/project/rna/./modules/picard_seq_dict.nf
+  Script_42c7fd8b2906c789: /home/ubuntu/project/rna/./modules/bowtie2_index.nf
+May-16 22:36:06.240 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+May-16 22:36:06.240 [main] DEBUG nextflow.Session - Session await
+May-16 22:36:06.486 [Actor Thread 1] INFO  nextflow.processor.TaskProcessor - [cb/81c75b] Cached process > bowtie2_index
+May-16 22:36:06.486 [Actor Thread 13] INFO  nextflow.processor.TaskProcessor - [92/ed5b6e] Cached process > salmon_index
+May-16 22:36:06.486 [Actor Thread 6] INFO  nextflow.processor.TaskProcessor - [42/db1677] Cached process > star_index
+May-16 22:36:06.486 [Actor Thread 18] INFO  nextflow.processor.TaskProcessor - [8e/44eafd] Cached process > kallisto_index
+May-16 22:36:06.486 [Actor Thread 8] INFO  nextflow.processor.TaskProcessor - [b9/bddb3b] Cached process > picard_seq_dict
+May-16 22:36:06.494 [Actor Thread 4] INFO  nextflow.processor.TaskProcessor - [86/2d40d0] Cached process > fastqc (1)
+May-16 22:36:06.495 [Actor Thread 11] INFO  nextflow.processor.TaskProcessor - [7e/f886d5] Cached process > fastqc (3)
+May-16 22:36:06.495 [Actor Thread 15] INFO  nextflow.processor.TaskProcessor - [c3/4d54de] Cached process > fastqc (2)
+May-16 22:36:06.501 [Actor Thread 5] INFO  nextflow.processor.TaskProcessor - [75/b6047b] Cached process > trim_galore (2)
+May-16 22:36:06.495 [Actor Thread 19] INFO  nextflow.processor.TaskProcessor - [21/34e43f] Cached process > fastqc (4)
+May-16 22:36:06.501 [Actor Thread 12] INFO  nextflow.processor.TaskProcessor - [00/a663a1] Cached process > trim_galore (1)
+May-16 22:36:06.503 [Actor Thread 16] INFO  nextflow.processor.TaskProcessor - [b8/ce1ce2] Cached process > trim_galore (3)
+May-16 22:36:06.505 [Actor Thread 21] INFO  nextflow.processor.TaskProcessor - [42/d244b3] Cached process > trim_galore (4)
+May-16 22:36:06.531 [Actor Thread 22] INFO  nextflow.processor.TaskProcessor - [69/ea1639] Cached process > kallisto (1)
+May-16 22:36:06.531 [Actor Thread 23] INFO  nextflow.processor.TaskProcessor - [dc/b4436b] Cached process > bowtie2 (1)
+May-16 22:36:06.536 [Actor Thread 28] INFO  nextflow.processor.TaskProcessor - [c5/b20ddf] Cached process > bowtie2 (2)
+May-16 22:36:06.548 [Actor Thread 20] INFO  nextflow.processor.TaskProcessor - [67/c50427] Cached process > star (1)
+May-16 22:36:06.576 [Actor Thread 27] INFO  nextflow.processor.TaskProcessor - [5c/faceb6] Cached process > star (2)
+May-16 22:36:06.585 [Actor Thread 25] INFO  nextflow.processor.TaskProcessor - [2d/9e00ab] Cached process > salmon (3)
+May-16 22:36:06.585 [Actor Thread 32] INFO  nextflow.processor.TaskProcessor - [fd/5b6e56] Cached process > salmon (1)
+May-16 22:36:06.585 [Actor Thread 36] INFO  nextflow.processor.TaskProcessor - [59/e21469] Cached process > kallisto (2)
+May-16 22:36:06.586 [Actor Thread 35] INFO  nextflow.processor.TaskProcessor - [b9/eeef43] Cached process > samtools (1)
+May-16 22:36:06.587 [Actor Thread 37] INFO  nextflow.processor.TaskProcessor - [13/37b1b8] Cached process > star (4)
+May-16 22:36:06.588 [Actor Thread 31] INFO  nextflow.processor.TaskProcessor - [4b/faf392] Cached process > kallisto (4)
+May-16 22:36:06.591 [Actor Thread 39] INFO  nextflow.processor.TaskProcessor - [91/03153e] Cached process > kallisto (3)
+May-16 22:36:06.609 [Actor Thread 38] INFO  nextflow.processor.TaskProcessor - [7e/c60e03] Cached process > bowtie2 (3)
+May-16 22:36:06.612 [Actor Thread 46] INFO  nextflow.processor.TaskProcessor - [27/c31948] Cached process > samtools (2)
+May-16 22:36:06.617 [Actor Thread 44] INFO  nextflow.processor.TaskProcessor - [26/34047c] Cached process > bowtie2 (4)
+May-16 22:36:06.618 [Actor Thread 45] INFO  nextflow.processor.TaskProcessor - [63/8e12bd] Cached process > picard_sort_sam (3)
+May-16 22:36:06.619 [Actor Thread 43] INFO  nextflow.processor.TaskProcessor - [98/f1228c] Cached process > salmon (4)
+May-16 22:36:06.621 [Actor Thread 49] INFO  nextflow.processor.TaskProcessor - [4e/6fd3cf] Cached process > picard_alignment_summary (1)
+May-16 22:36:06.621 [Actor Thread 29] INFO  nextflow.processor.TaskProcessor - [66/a249f5] Cached process > samtools (3)
+May-16 22:36:06.625 [Actor Thread 48] INFO  nextflow.processor.TaskProcessor - [5f/f14ab3] Cached process > picard_alignment_summary (2)
+May-16 22:36:06.625 [Actor Thread 50] INFO  nextflow.processor.TaskProcessor - [7f/471003] Cached process > picard_sort_sam (1)
+May-16 22:36:06.625 [Actor Thread 30] INFO  nextflow.processor.TaskProcessor - [5c/8341f0] Cached process > stringtie (2)
+May-16 22:36:06.625 [Actor Thread 23] INFO  nextflow.processor.TaskProcessor - [c4/f30fab] Cached process > samtools (4)
+May-16 22:36:06.629 [Actor Thread 52] INFO  nextflow.processor.TaskProcessor - [e0/2ff3bb] Cached process > stringtie (3)
+May-16 22:36:06.631 [Actor Thread 26] INFO  nextflow.processor.TaskProcessor - [2a/88918e] Cached process > stringtie (1)
+May-16 22:36:06.632 [Actor Thread 40] INFO  nextflow.processor.TaskProcessor - [4a/eb3f3c] Cached process > star (3)
+May-16 22:36:06.632 [Actor Thread 51] INFO  nextflow.processor.TaskProcessor - [78/c0e156] Cached process > picard_alignment_summary (3)
+May-16 22:36:06.634 [Actor Thread 33] INFO  nextflow.processor.TaskProcessor - [8b/d1d808] Cached process > salmon (2)
+May-16 22:36:06.637 [Actor Thread 2] INFO  nextflow.processor.TaskProcessor - [f0/a36767] Cached process > stringtie (4)
+May-16 22:36:06.640 [Actor Thread 35] INFO  nextflow.processor.TaskProcessor - [cb/9cbb5c] Cached process > picard_alignment_summary (4)
+May-16 22:36:06.641 [Actor Thread 41] INFO  nextflow.processor.TaskProcessor - [e2/1b245b] Cached process > picard_sort_sam (2)
+May-16 22:36:06.643 [Actor Thread 38] INFO  nextflow.processor.TaskProcessor - [fe/0d7778] Cached process > featurecounts (1)
+May-16 22:36:06.643 [Actor Thread 39] INFO  nextflow.processor.TaskProcessor - [52/47e6de] Cached process > featurecounts (2)
+May-16 22:36:06.647 [Actor Thread 26] INFO  nextflow.processor.TaskProcessor - [26/06614d] Cached process > picard_sort_sam (4)
+May-16 22:36:06.647 [Actor Thread 40] INFO  nextflow.processor.TaskProcessor - [d0/3b6262] Cached process > featurecounts (3)
+May-16 22:36:06.675 [Actor Thread 57] INFO  nextflow.processor.TaskProcessor - [ba/f9b00c] Cached process > featurecounts (4)
+May-16 22:36:06.675 [Actor Thread 12] INFO  nextflow.processor.TaskProcessor - [dc/0f6084] Cached process > multiqc
+May-16 22:36:06.679 [main] DEBUG nextflow.Session - Session await > all processes finished
+May-16 22:36:06.718 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+May-16 22:36:06.718 [main] DEBUG nextflow.Session - Session await > all barriers passed
+May-16 22:36:06.729 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=50; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=25m 21s;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+May-16 22:36:06.729 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow completed -- saving trace file
+May-16 22:36:06.871 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+May-16 22:36:06.893 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+May-16 22:36:06.894 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

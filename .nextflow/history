@@ -1,0 +1,5 @@
+2025-07-13 01:16:24	-	extravagant_leibniz	-	5c609ecf43430e9cc487d14f6d438a05	be74ae0d-b8e1-4abd-8149-14e1aa8a0a4e	nextflow run rna_pipe.nf -preview -with-dag rna_mermaid.mmd
+2025-07-13 01:17:04	6.1s	kickass_hilbert	OK	5c609ecf43430e9cc487d14f6d438a05	d609d798-3cbf-463e-bab6-64c30dea1330	nextflow run rna_pipe.nf -preview -with-dag rna_mermaid.mmd
+2025-07-13 01:20:06	6.5s	desperate_feynman	OK	5c609ecf43430e9cc487d14f6d438a05	27a3b7ba-ff3c-4c47-875d-5efb85d67bb1	nextflow run rna_pipe.nf -preview -with-dag rna_flow.png
+2025-07-13 01:26:08	-	amazing_plateau	-	e7204d6cf28668e75949807c244fb942	b5736103-520c-4723-814e-c96b1d89f72f	nextflow run rna_pipe.nf -preview -with-dag rna_flow.png
+2025-07-13 01:26:43	5.4s	naughty_swanson	OK	e7204d6cf28668e75949807c244fb942	c104d7ee-418f-4f07-a6b0-0316ca7f1605	nextflow run rna_pipe.nf -preview -with-dag rna_flow.png

@@ -1,0 +1,1 @@
+/home/simon/Documents/uni/semester8/praxis/rna/work/00/b75d1bb89b1bd737a571d206032828/eipl_A.2.fastq.gz_trimming_report.txt

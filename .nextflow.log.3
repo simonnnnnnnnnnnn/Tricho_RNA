@@ -1,0 +1,276 @@
+Jul-13 01:17:02.948 [main] DEBUG nextflow.cli.Launcher - $> nextflow run rna_pipe.nf -preview -with-dag rna_mermaid.mmd
+Jul-13 01:17:03.049 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.10.6
+Jul-13 01:17:03.075 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/root/.nextflow/plugins; core-plugins: nf-amazon@2.9.3,nf-azure@1.10.2,nf-cloudcache@0.4.2,nf-codecommit@0.2.2,nf-console@1.1.4,nf-google@1.15.4,nf-tower@1.9.3,nf-wave@1.7.5
+Jul-13 01:17:03.110 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jul-13 01:17:03.111 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jul-13 01:17:03.115 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Jul-13 01:17:03.132 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jul-13 01:17:03.162 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/simon/Documents/uni/semester8/praxis/rna/nextflow.config
+Jul-13 01:17:03.168 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/simon/Documents/uni/semester8/praxis/rna/nextflow.config
+Jul-13 01:17:03.228 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /root/.nextflow/secrets/store.json
+Jul-13 01:17:03.234 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@1f14f20c] - activable => nextflow.secret.LocalSecretsProvider@1f14f20c
+Jul-13 01:17:03.241 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Jul-13 01:17:03.827 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Jul-13 01:17:03.852 [main] DEBUG nextflow.cli.CmdRun - * PREVIEW * null [kickass_hilbert] DSL2 - revision: 5c609ecf43
+Jul-13 01:17:03.854 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jul-13 01:17:03.855 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jul-13 01:17:03.948 [main] DEBUG nextflow.Session - Session UUID: d609d798-3cbf-463e-bab6-64c30dea1330
+Jul-13 01:17:03.949 [main] DEBUG nextflow.Session - Run name: kickass_hilbert
+Jul-13 01:17:03.950 [main] DEBUG nextflow.Session - Executor pool size: 4
+Jul-13 01:17:03.966 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jul-13 01:17:03.982 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jul-13 01:17:04.010 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.10.6 build 5937
+  Created: 23-04-2025 16:53 UTC (18:53 CEST)
+  System: Linux 6.8.0-60-generic
+  Runtime: Groovy 4.0.23 on Java HotSpot(TM) 64-Bit Server VM 21+35-LTS-2513
+  Encoding: UTF-8 (UTF-8)
+  Process: 343696@simon-Aspire-A51 [127.0.1.1]
+  CPUs: 4 - Mem: 7.6 GB (395.3 MB) - Swap: 2 GB (652 KB)
+Jul-13 01:17:04.035 [main] DEBUG nextflow.Session - Work-dir: /home/ubuntu/point/work [ext2/ext3]
+Jul-13 01:17:04.036 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/simon/Documents/uni/semester8/praxis/rna/bin
+Jul-13 01:17:04.043 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jul-13 01:17:04.051 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jul-13 01:17:04.098 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jul-13 01:17:04.108 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 5; maxThreads: 1000
+Jul-13 01:17:04.167 [main] DEBUG nextflow.Session - Session start
+Jul-13 01:17:04.170 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: /home/simon/Documents/uni/semester8/praxis/rna/trace-20250713-4624055.txt
+Jul-13 01:17:04.952 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jul-13 01:17:07.981 [main] INFO  nextflow.script.BaseScript - annotation type: gff
+Jul-13 01:17:08.204 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.205 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.210 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jul-13 01:17:08.218 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=4; memory=7.6 GB; capacity=4; pollInterval=100ms; dumpInterval=5m
+Jul-13 01:17:08.220 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Jul-13 01:17:08.286 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.286 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.306 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.306 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.314 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.314 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.321 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.321 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.331 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.332 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.343 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.343 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.352 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.352 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.359 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.359 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.371 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.372 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.383 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.384 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.393 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.394 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.411 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.411 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.421 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.422 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.445 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.446 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.455 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.455 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.466 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.466 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.475 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.475 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.487 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.487 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.500 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.500 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.509 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.510 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.519 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.519 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.526 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.526 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.534 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.535 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.547 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.548 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.557 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.558 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.566 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.568 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.577 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.577 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.586 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.587 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.597 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.597 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.610 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.611 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.652 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.652 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.661 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.662 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.676 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.678 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.697 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.700 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.716 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.716 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.740 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.740 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.758 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.759 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.789 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.790 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.802 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.802 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.818 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.818 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.842 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.842 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.852 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.853 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.863 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.864 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.875 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.875 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.884 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.884 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.890 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.891 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.898 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.898 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.913 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.913 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.923 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.923 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.930 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.930 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.938 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.938 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.947 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.950 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.965 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.966 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.985 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.985 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:08.999 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:08.999 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:09.008 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:09.009 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:09.024 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:09.024 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:09.044 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:09.045 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:09.052 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:09.052 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:09.065 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:09.065 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:09.072 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:09.072 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:09.082 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:09.082 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:09.097 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:09.097 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:09.116 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:09.116 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:09.122 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:09.122 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:09.127 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:09.127 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:09.136 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:09.136 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:09.156 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 01:17:09.156 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 01:17:09.163 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: bowtie2_index, clean_features_star, compare_tpms, plot_volcano_edger_bowtie2, get_scaffold_order, plot_volcano_deseq2_kallisto, bedtools_sort_gtf, star_stats, trim_galore, bowtie_gene_coverage, dge_limma_star, dge_edger_bowtie2, star_genome_coverage, dge_limma_bowtie2, bedtools_bowtie2, plot_volcano_deseq2_star, kallisto_index, finish_pipeline, benchmarks, diff_gene_expr_edger_kallisto, bedtools_sort_gtf_bowtie, plot_volcano_limma_bowtie2, get_scaffold_order_bowtie, dge_edger_salmon, bowtie2, plot_volcano_deseq2_bowtie2, samtools_star, samtools, diff_gene_expr_salmon, bowtie_genome_coverage, plot_volcano_edger_star, salmon, diff_gene_expr_edger_salmon, diff_gene_expr_edger_bowtie2, dge_deseq2_kallisto, dge_deseq2_bowtie2, sort_gtf_by_scaffold, kallisto, clean_abundance, make_tx2gene_from_gff, bowtie_calc_genome_cov, clean_features_bowtie2, star_calc_gene_cov, diff_gene_expr_star, rename_trace, create_ref_transcriptome, plot_volcano_edger_kallisto, diff_gene_expr_edger_star, bowtie_mq, bowtie2_stats, featurecounts_star, calculate_tpms_star, samtools_bowtie2, plot_volcano_edger_salmon, dge_edger_kallisto, dge_limma_salmon, pseudo_coverage, star_index, dge_deseq2_star, dge_deseq2_salmon, plot_volcano_limma_salmon, plot_volcano_limma_kallisto, diff_gene_expr_bowtie2, star_mq, sam_to_bam, multiqc, diff_gene_expr_kallisto, bowtie_calc_gene_cov, picard_alignment_summary_star, star, calculate_tpms_bowtie2, star_gene_coverage, sort_gtf, rename_report, featurecounts_bowtie2, star_calc_genome_cov, dge_edger_star, dge_limma_kallisto, picard_alignment_summary_bowtie2, fastqc, plot_volcano_limma_star, create_gtf, clean_quant, salmon_index, plot_volcano_deseq2_salmon
+Jul-13 01:17:09.165 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_534f980709d8fb4d: /home/simon/Documents/uni/semester8/praxis/rna/./modules/make_tx2gene_from_gff.nf
+  Script_570bfa66de757fbc: /home/simon/Documents/uni/semester8/praxis/rna/./modules/plot_volcano_edger_salmon.nf
+  Script_e62f76a5f3259afb: /home/simon/Documents/uni/semester8/praxis/rna/./modules/diff_gene_expr_star.nf
+  Script_afd06098be6142a5: /home/simon/Documents/uni/semester8/praxis/rna/./modules/dge_limma_star.nf
+  Script_77eb7c76841807f1: /home/simon/Documents/uni/semester8/praxis/rna/./modules/plot_volcano_edger_kallisto.nf
+  Script_a5966f060749b165: /home/simon/Documents/uni/semester8/praxis/rna/./modules/clean_abundance.nf
+  Script_3f01b293c98c26fd: /home/simon/Documents/uni/semester8/praxis/rna/./modules/diff_gene_expr_bowtie2.nf
+  Script_3f742ecb4d929908: /home/simon/Documents/uni/semester8/praxis/rna/./modules/star_genome_coverage.nf
+  Script_7975d2c6be11f727: /home/simon/Documents/uni/semester8/praxis/rna/./modules/picard_alignment_summary_bowtie2.nf
+  Script_a7f0e5ebc6808006: /home/simon/Documents/uni/semester8/praxis/rna/./modules/compare_tpms.nf
+  Script_463aede32b8c67b7: /home/simon/Documents/uni/semester8/praxis/rna/./modules/bowtie_calc_genome_cov.nf
+  Script_b00d917de27ff11d: /home/simon/Documents/uni/semester8/praxis/rna/./modules/get_scaffold_order.nf
+  Script_6ada4460eb9163e5: /home/simon/Documents/uni/semester8/praxis/rna/rna_pipe.nf
+  Script_7cf6d70161d49cf3: /home/simon/Documents/uni/semester8/praxis/rna/./modules/samtools_star.nf
+  Script_072d2d6ceea60337: /home/simon/Documents/uni/semester8/praxis/rna/./modules/pseudo_coverage.nf
+  Script_54d3e3105d979d59: /home/simon/Documents/uni/semester8/praxis/rna/./modules/rename_report.nf
+  Script_d727c60144cbf7c1: /home/simon/Documents/uni/semester8/praxis/rna/./modules/dge_limma_kallisto.nf
+  Script_c44cf3710588db8a: /home/simon/Documents/uni/semester8/praxis/rna/./modules/plot_volcano_limma_kallisto.nf
+  Script_0ecbb5fdcd938969: /home/simon/Documents/uni/semester8/praxis/rna/./modules/bowtie2_index.nf
+  Script_75e0b67d2f53f9e8: /home/simon/Documents/uni/semester8/praxis/rna/./modules/dge_deseq2_star.nf
+  Script_308382420b4db612: /home/simon/Documents/uni/semester8/praxis/rna/./modules/diff_gene_expr_edger_star.nf
+  Script_5f202753d1e2052b: /home/simon/Documents/uni/semester8/praxis/rna/./modules/plot_volcano_deseq2_star.nf
+  Script_ba99679fd275d2a6: /home/simon/Documents/uni/semester8/praxis/rna/./modules/clean_quant.nf
+  Script_71c5113c7f3d3a42: /home/simon/Documents/uni/semester8/praxis/rna/./modules/star_mq.nf
+  Script_7d6df2bca2a3a12c: /home/simon/Documents/uni/semester8/praxis/rna/./modules/salmon.nf
+  Script_fc892cdbcc501125: /home/simon/Documents/uni/semester8/praxis/rna/./modules/create_gtf.nf
+  Script_ca6d9be34b8a012d: /home/simon/Documents/uni/semester8/praxis/rna/./modules/calculate_tpms_bowtie2.nf
+  Script_4f8c1e0fae13ab18: /home/simon/Documents/uni/semester8/praxis/rna/./modules/dge_edger_bowtie2.nf
+  Script_3377e04202fe24bd: /home/simon/Documents/uni/semester8/praxis/rna/./modules/diff_gene_expr_edger_kallisto.nf
+  Script_f8032a80bf066cfa: /home/simon/Documents/uni/semester8/praxis/rna/./modules/dge_deseq2_salmon.nf
+  Script_79146cedd616e1f4: /home/simon/Documents/uni/semester8/praxis/rna/./modules/bedtools_sort_gtf.nf
+  Script_4e66998b15ca7b4e: /home/simon/Documents/uni/semester8/praxis/rna/./modules/plot_volcano_deseq2_bowtie2.nf
+  Script_17ac87b8be8c2fc1: /home/simon/Documents/uni/semester8/praxis/rna/./modules/salmon_index.nf
+  Script_abc0e4a183f87d0f: /home/simon/Documents/uni/semester8/praxis/rna/./modules/kallisto_index.nf
+  Script_e15e8ce6c9155fb2: /home/simon/Documents/uni/semester8/praxis/rna/./modules/dge_limma_bowtie2.nf
+  Script_36c26cc14ad5788f: /home/simon/Documents/uni/semester8/praxis/rna/./modules/featurecounts_star.nf
+  Script_ad2b1e19b2dcb4b2: /home/simon/Documents/uni/semester8/praxis/rna/./modules/bowtie2_stats.nf
+  Script_d2c00f191eccd7e7: /home/simon/Documents/uni/semester8/praxis/rna/./modules/plot_volcano_limma_bowtie2.nf
+  Script_0dea8198e1bb9cf2: /home/simon/Documents/uni/semester8/praxis/rna/./modules/star_stats.nf
+  Script_371eb61146b8d63c: /home/simon/Documents/uni/semester8/praxis/rna/./modules/dge_limma_salmon.nf
+  Script_8ba67095dc880843: /home/simon/Documents/uni/semester8/praxis/rna/./modules/bedtools_bowtie2.nf
+  Script_c93d91ee420f54ab: /home/simon/Documents/uni/semester8/praxis/rna/./modules/bowtie2.nf
+  Script_b9464c1409fe9d81: /home/simon/Documents/uni/semester8/praxis/rna/./modules/finish_pipeline.nf
+  Script_a291f6195bcc5266: /home/simon/Documents/uni/semester8/praxis/rna/./modules/dge_deseq2_kallisto.nf
+  Script_0588b46bb88b1f40: /home/simon/Documents/uni/semester8/praxis/rna/./modules/dge_edger_kallisto.nf
+  Script_5eaabfc17adc78c6: /home/simon/Documents/uni/semester8/praxis/rna/./modules/diff_gene_expr_salmon.nf
+  Script_253c84912d16a136: /home/simon/Documents/uni/semester8/praxis/rna/./modules/fastqc.nf
+  Script_18f6a2379b95b9ba: /home/simon/Documents/uni/semester8/praxis/rna/./modules/plot_volcano_limma_star.nf
+  Script_c779c388f3ca21b9: /home/simon/Documents/uni/semester8/praxis/rna/./modules/samtools.nf
+  Script_50a29255852b2eb1: /home/simon/Documents/uni/semester8/praxis/rna/./modules/samtools_bowtie2.nf
+  Script_3f0402dec5a59616: /home/simon/Documents/uni/semester8/praxis/rna/./modules/diff_gene_expr_edger_salmon.nf
+  Script_6e1e0504a9c22f4a: /home/simon/Documents/uni/semester8/praxis/rna/./modules/star_calc_gene_cov.nf
+  Script_ee38ac74b4a655ad: /home/simon/Documents/uni/semester8/praxis/rna/./modules/sort_gtf.nf
+  Script_2bf2bd4856bf35e4: /home/simon/Documents/uni/semester8/praxis/rna/./modules/star_index.nf
+  Script_ad90ab84599134e6: /home/simon/Documents/uni/semester8/praxis/rna/./modules/dge_edger_salmon.nf
+  Script_6c2379ac30183384: /home/simon/Documents/uni/semester8/praxis/rna/./modules/plot_volcano_limma_salmon.nf
+  Script_ed8f1bfc27fd326f: /home/simon/Documents/uni/semester8/praxis/rna/./modules/bedtools_sort_gtf_bowtie.nf
+  Script_7cf2ed442e91f396: /home/simon/Documents/uni/semester8/praxis/rna/./modules/plot_volcano_deseq2_kallisto.nf
+  Script_2b0063504ed1ce93: /home/simon/Documents/uni/semester8/praxis/rna/./modules/trim_galore.nf
+  Script_f3ec026313526aeb: /home/simon/Documents/uni/semester8/praxis/rna/./modules/plot_volcano_edger_bowtie2.nf
+  Script_a6050fbb5ca23fbf: /home/simon/Documents/uni/semester8/praxis/rna/./modules/calculate_tpms_star.nf
+  Script_25bb5544b8415f9d: /home/simon/Documents/uni/semester8/praxis/rna/./modules/bowtie_calc_gene_cov.nf
+  Script_8523178b14cc9d0f: /home/simon/Documents/uni/semester8/praxis/rna/./modules/dge_deseq2_bowtie2.nf
+  Script_ea2dcf90962d6bff: /home/simon/Documents/uni/semester8/praxis/rna/./modules/plot_volcano_deseq2_salmon.nf
+  Script_33c7148915c87e31: /home/simon/Documents/uni/semester8/praxis/rna/./modules/clean_features_bowtie2.nf
+  Script_1728535dfb36c5f6: /home/simon/Documents/uni/semester8/praxis/rna/./modules/plot_volcano_edger_star.nf
+  Script_71d3ac409f12eba3: /home/simon/Documents/uni/semester8/praxis/rna/./modules/create_ref_transcriptome.nf
+  Script_cfe7cd5c45603be6: /home/simon/Documents/uni/semester8/praxis/rna/./modules/star_calc_genome_cov.nf
+  Script_bf90353efaf27347: /home/simon/Documents/uni/semester8/praxis/rna/./modules/star_gene_coverage.nf
+  Script_1c5d3e7ca1cb1779: /home/simon/Documents/uni/semester8/praxis/rna/./modules/star.nf
+  Script_f3e668482d6bb61c: /home/simon/Documents/uni/semester8/praxis/rna/./modules/clean_features_star.nf
+  Script_7f561c3e1ad97fcf: /home/simon/Documents/uni/semester8/praxis/rna/./modules/multiqc.nf
+  Script_3a387f2c228d4838: /home/simon/Documents/uni/semester8/praxis/rna/./modules/bowtie_mq.nf
+  Script_c58341b2d1410799: /home/simon/Documents/uni/semester8/praxis/rna/./modules/benchmarks.nf
+  Script_1657ac64a1e1ec64: /home/simon/Documents/uni/semester8/praxis/rna/./modules/bowtie_genome_coverage.nf
+  Script_4eef7a094f187a8f: /home/simon/Documents/uni/semester8/praxis/rna/./modules/get_scaffold_order_bowtie.nf
+  Script_ca262ac8aff6a405: /home/simon/Documents/uni/semester8/praxis/rna/./modules/kallisto.nf
+  Script_c53b7d070e95415e: /home/simon/Documents/uni/semester8/praxis/rna/./modules/rename_trace.nf
+  Script_def011125896aca8: /home/simon/Documents/uni/semester8/praxis/rna/./modules/sam_to_bam.nf
+  Script_6bc6f78b0aef14ff: /home/simon/Documents/uni/semester8/praxis/rna/./modules/diff_gene_expr_edger_bowtie2.nf
+  Script_f0f62277ec78f01e: /home/simon/Documents/uni/semester8/praxis/rna/./modules/picard_alignment_summary_star.nf
+  Script_99d7a6f71fce1490: /home/simon/Documents/uni/semester8/praxis/rna/./modules/diff_gene_expr_kallisto.nf
+  Script_840f5503d42d94d3: /home/simon/Documents/uni/semester8/praxis/rna/./modules/sort_gtf_by_scaffold.nf
+  Script_95c231b9af562dec: /home/simon/Documents/uni/semester8/praxis/rna/./modules/featurecounts_bowtie2.nf
+  Script_8b8260c2105dafb0: /home/simon/Documents/uni/semester8/praxis/rna/./modules/bowtie_gene_coverage.nf
+  Script_167ca41c1a70b72a: /home/simon/Documents/uni/semester8/praxis/rna/./modules/dge_edger_star.nf
+Jul-13 01:17:09.199 [main] INFO  nextflow.script.BaseScript - renaming latest trace --> include timestamp
+Jul-13 01:17:09.210 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Jul-13 01:17:09.211 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow completed -- saving trace file
+Jul-13 01:17:09.212 [main] DEBUG nextflow.trace.ReportObserver - Workflow completed -- rendering execution report
+Jul-13 01:17:09.239 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Jul-13 01:17:10.059 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jul-13 01:17:10.089 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Jul-13 01:17:10.089 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
